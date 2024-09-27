@@ -1,0 +1,17 @@
+version: 1
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16.x
+    commands:
+      - echo Installing dependencies...
+      - npm ci
+  build:
+    commands:
+      - echo Building the React app...
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
