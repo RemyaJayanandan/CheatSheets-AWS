@@ -5,7 +5,7 @@ provider "aws" {
 # Security Group for EC2 Instances
 resource "aws_security_group" "asg_sg" {
   name        = "asg_sg"
-  description = "Allow HTTP and SSH traffic"
+  description = "Allow HTTP and SSH traffic"         
   vpc_id      = "vpc-0215cff6cab57ccb5"
 
   ingress {
